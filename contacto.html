@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markel Urrestarazu Insausti - Contacto</title>
+    <link rel="stylesheet" href="css/estiloMarkel.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto: Markel Urrestarazu Insausti</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>Rellena el siguiente formulario para ponerte en contacto conmigo.</p>
+        </section>
+    <form action="server.php" method="get">
+      <fieldset>
+        <legend>Datos</legend>
+        <label for="id-nombre">Nombre: </label>
+        <input type="text" name="nombre" id="id-nombre">
+        <br><br>
+        <label for="id-email">Email: </label>
+        <input type="email" name="email" id="id-email">
+      </fieldset>
+      <fieldset>
+        <legend>Mensaje</legend>
+        <label for="id-motivo">Motivo </label>
+        <select id="id-motivo" name="motivo">
+          <option selected>Saludo</option>
+          <option>Información</option>
+          <option>Opinión</option>
+        </select>
+        <br><br>
+        <textarea name="mensaje" rows="6" cols="30" placeholder="Mensaje"></textarea>
+      </fieldset>
+      <br>
+      <input type="checkbox" name="condiciones" id="id-condiciones" value="1">
+      <label for="id-condiciones">Acepto las condiciones</label>
+      <br><br>
+      <input type="submit" name="enviar" value="Enviar">
+    </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web Personal</p>
+    </footer>
+</body>
+</html>
